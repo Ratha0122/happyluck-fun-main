@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Tin tức  Happyluck cực dễ dàng chỉ qua 3 bước đơn giản</title>
+    <link
+      rel="icon"
+      href="./assets/images/cropped-logo-happyluke-60x60.png"
+      sizes="192x192"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/jquery-3.7.1.min.js"></script>
+    <script src="assets/tailwind.js"></script>
+    <link rel="stylesheet" href="./assets/index.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+</head>
+<body>
+<div id="header"></div>
+<main>
+    <div class="shadow-lg">
+        <div class="container mx-auto py-3">
+        <p>Home - Tin tức</p></div>
+    </div>
+    <div class="container mx-auto">
+    <div class="content-1 content-1-khuyen grid grid-cols-12 gap-5 lg:gap-10 my-5 lg:my-10 ">
+        <div class="col-span-12 md:col-span-9 border rounded-2xl *:pb-7 p-5 lg:p-10 *:mb-5 *:lg:mb-10">
+            <div class="border rounded-lg p-5 lg:p-10">
+                <h1 >Tin tức</h1>
+                <p>Tin tức trò chơi, thông tin về nhà cái happyluck tung khuyến mãi, bảo trì, thay đổi link truy cập được luke79 cập nhật ngay dưới đây.</p>
+            </div>
+            <div id="showloading" class=" h-screen w-full left-0 bg-[#adadadbe] top-0 fixed duration-1000">
+                <div class=' space-x-2 justify-center flex items-center mt-[20%]'>
+                    <div class='h-8 w-8 bg-black rounded-full animate-bounce [animation-delay:0s]'></div>
+                   <div class='h-8 w-8 bg-black rounded-full animate-bounce [animation-delay:-0.3s]'></div>
+                   <div class='h-8 w-8 bg-black rounded-full animate-bounce'></div>
+                  </div>
+            </div>
+            <div id="items_main"></div>
+        </div>
+        <div class="col-span-12 md:col-span-3" id="news_right">
+        </div>
+    </div>
+    </div>
+</main>
+<div id="footer"></div>
+<div id="backtotop"></div>
+<script>
+  var active = "Tin tức";
+      var items_main = [
+  {
+    id: 13,
+    h2: "FF là gì trong game LOL? FF khi nào? – Luke79.top giải đáp",
+    span: "Hoàng Khánh Ngân Lần cập nhật cuối: 22 Tháng Tư, 2024",
+    p: "FF là gì trong game Liên Minh Huyền Thoại? Người chơi thường FF khi nào? Hiện nay thuật ngữ FF đang được rất nhiều game thủ LOL sử dụng khi chơi ở những trận đấu không có hy vọng chiến thắng. Thậm chí còn có nhiều người chơi bỏ...",
+    image: "ff-la-gi-2-600x400.jpg"
+  },
+  {
+    id: 14,
+    h2: "Bot gap là gì trong LMHT? – Luke79.top giải mã",
+    span: "Hoàng Khánh Ngân Lần cập nhật cuối: 22 Tháng Tư, 2024",
+    p: "Bot gap là gì trong Liên Minh Huyền Thoại? Tầm quan trọng của Bot gap trong LOL như thế nào? Người chơi cần làm gì để tránh bị coi là Bot gap trong game? Hiện nay có rất nhiều game thủ muốn cải thiện trình độ chơi game của...",
+    image: "phuong-phap-bot-gap-600x400.jpg"
+  },
+  {
+    id: 15,
+    h2: "Game nổ hũ đổi thưởng – Sản phẩm hấp dẫn nhất tại Luke79.top",
+    span: "Hoàng Khánh Ngân Lần cập nhật cuối: 22 Tháng Tư, 2024",
+    p: "Game nổ hũ đổi thưởng đang là một trong những sản phẩm cược nhiều anh em chọn tại nhà cái HappyLuck. Lượng người tham gia cược game khá đông đảo. Dù vậy, với một vì người mới bắt đầu thử sức sẽ phần nào thấy xa lạ. Đừng bỏ...",
+    image: "huong-dan-coi-game-no-hu-doi-thuong-600x400.jpg"
+  },
+  {
+    id: 16,
+    h2: "Hướng dẫn 3 bước chơi lô đề HappyLuck đơn giản nhất cho “lính mới”",
+    span: "Hoàng Khánh Ngân Lần cập nhật cuối: 22 Tháng Tư, 2024",
+    p: "Ngoài đầu tư cá cược bóng đá, tham gia đánh bài hay trải nghiệm những vòng quay tại slot game HappyLuck. Thì việc đầu tư vào lô đề HappyLuck cũng là cách giúp bạn kiếm tiền hiệu quả tại nhà cái này. Vậy bạn đã biết cách chơi lô...",
+    image: "lo-de-happyluke-co-gi-dac-biet-600x400.jpg"
+  },
+  {
+    id: 17,
+    h2: "Happyluck Việt Nam – Sân chơi cá cược uy tín dành cho người Việt",
+    span: "Hoàng Khánh Ngân Lần cập nhật cuối: 22 Tháng Tư, 2024",
+    p: "Nằm trong kế hoạch mở rộng thị trường cá cược của mình, Happyluck đã chính thức có mặt tại Việt Nam. Với tên gọi của nhà cái là Happyluck Việt Nam, đây thực sự trở thành điểm đến lý tưởng cho cộng đồng người yêu thích cá cược tại...",
+    image: "Nha-cai-Happyluke-Viet-Nam-hoat-dong-soi-noi-tai-Viet-Nam-600x400.jpg"
+  },
+  {
+    id: 18,
+    h2: "Happyluck 88 là gì? Có nên tham gia cá cược tại nhà cái Happyluck 88 không?",
+    span: "Hoàng Khánh Ngân Lần cập nhật cuối: 22 Tháng Tư, 2024",
+    p: "Sự xuất hiện của nhà cái Happyluck 88 làm dấy lên nhiều câu hỏi nghi ngờ về sân chơi cá cược này. Qua đó người chơi đều đưa ra câu hỏi thắc mắc rằng nhà cái Happyluck 88 là gì? Liệu rằng họ có phải là 1 thương hiệu...",
+    image: "Happyluke-88-mang-y-nghia-la-su-may-man-va-tai-loc-600x378.jpg"
+  },
+  
+  ];
+  $.each(items_main, function(index, item) {
+    var item_main = `
+        <div class="border rounded-lg p-5 lg:p-10 *:pb-5 mb-5">
+            <h2 onclick="detail(${item.id})">${item.h2}</h2>
+            <div class="flex items-center gap-5">
+                <div class="flex items-center w-[3rem] h-[3rem] bg-center">
+                    <img class="w-full h-full rounded-[100%] object-cover" src="./assets/images/hoang-khanh-ngan-600x400.jpg" alt="">
+                </div>   
+                <span class="text-[1.4rem]">${item.span}</span>  
+            </div>
+            <div class="grid grid-cols-12 gap-5 items-center">
+                <div class="col-span-12 lg:col-span-3 ">
+                    <img class="cursor-pointer" onclick="detail(${item.id})" src="./assets/images/${item.image}" alt="">
+                </div>
+                <div class="*:pb-5 col-span-12 lg:col-span-9">
+                    <p class="cursor-pointer" onclick="detail(${item.id})">${item.p}</p>
+                    <button onclick="detail(${item.id})" type="button" class="text-white bg-black focus:ring-4 focus:outline-none focus:ring-white dark:focus:ring-pink-800 shadow-lg shadow-black dark:shadow-lg dark:shadow-pink-800/80 font-medium rounded-lg text-2xl px-10 py-4 text-center me-2 mb-2">Xem thêm</button>
+                </div>
+            </div>
+        </div>
+    `;
+
+    $('#items_main').append(item_main);
+  });
+</script>
+<script>
+  var active = "";
+ </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  <script src="./assets/javascript.js"></script>
+  <script src="./assets/index.ts"></script>
+</body>

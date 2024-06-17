@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Soi cầu  Happyluck cực dễ dàng chỉ qua 3 bước đơn giản</title>
+    <link
+      rel="icon"
+      href="./assets/images/cropped-logo-happyluke-60x60.png"
+      sizes="192x192"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/jquery-3.7.1.min.js"></script>
+    <script src="assets/tailwind.js"></script>
+    <link rel="stylesheet" href="./assets/index.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+</head>
+<body>
+<div id="header"></div>
+
+
+<main>
+    <div class="shadow-lg">
+        <div class="container mx-auto py-3">
+        <p>Home - Soi cầu</p></div>
+    </div>
+    <div class="container mx-auto">
+
+    
+    <div class="content-1 content-1-khuyen grid grid-cols-12 gap-5 lg:gap-10 my-5 lg:my-10 ">
+        <div class="col-span-12 md:col-span-9 border rounded-2xl p-5 lg:p-10 *:mb-5 *:lg:mb-10">
+            <div class="border rounded-lg p-5 lg:p-10">
+                <h1 >Soi cầu</h1>
+                <p>Happyluck hướng dẫn anh em cách soi cầu, chia sẻ kinh nghiệm đánh lô đề từ các cao thủ. Kết quả xổ số 3 miền mới nhất hôm nay</p>
+            </div>
+            <div id="showloading" class=" h-screen w-full left-0 bg-[#adadadbe] top-0 fixed duration-1000">
+                <div class=' space-x-2 justify-center flex items-center mt-[20%]'>
+                    <div class='h-8 w-8 bg-black rounded-full animate-bounce [animation-delay:0s]'></div>
+                   <div class='h-8 w-8 bg-black rounded-full animate-bounce [animation-delay:-0.3s]'></div>
+                   <div class='h-8 w-8 bg-black rounded-full animate-bounce'></div>
+                  </div>
+            </div>
+            <div id="items_main"></div>
+            
+
+        </div>
+        <div class="col-span-12 md:col-span-3" id="news_right">
+        </div>
+    </div>
+
+    </div>
+</main>
+
+
+<div id="footer"></div>
+<div id="backtotop"></div>
+<script>
+  var active = "Soi cầu";
+    var items_main = [
+  {
+    id: 9,
+    h2: "Link vào 90phut – Địa chỉ xem bóng đá trực tiếp số 1 Việt Nam",
+    span: "Hoàng Khánh Ngân Lần cập nhật cuối: 22 Tháng Tư, 2024",
+    p: "Để tìm được link vào 90phut thì cần truy cập vào địa chỉ nào? Những ưu và nhược điểm của trang web xem bóng đá trực tiếp 90phut TV gồm những gì? Các bạn có gì còn thắc mắc về trang web 90phut TV? Để hiểu rõ về chủ...",
+    image: "image-12-600x400.jpg"
+  },
+  {
+    id: 10,
+    h2: "Cách tìm link vào tiengruoi TV xem bóng đá trực tiếp",
+    span: "Hoàng Khánh Ngân Lần cập nhật cuối: 22 Tháng Tư, 2024",
+    p: "Đường link vào tiengruoi TV được cung cấp tại casino HappyLuck có thực sự an toàn – chính xác tuyệt đối? Những dịch vụ mà trang web xem trực tiếp bóng đá này cung cấp gồm những gì? Để hiểu rõ về chủ đề này hơn thì các bạn...",
+    image: "image-8-600x400.jpg"
+  },
+  {
+    id: 11,
+    h2: "Link vào mitom tv – Địa chỉ xem bóng đá trực tiếp số 1 Việt Nam",
+    span: "Hoàng Khánh Ngân Lần cập nhật cuối: 22 Tháng Tư, 2024",
+    p: "Làm sao để tìm được đường link vào mitom tv an toàn – chính xác nhất? Mitom TV hiện cung cấp những dịch vụ gì cho người xem? Những ưu và nhược điểm của trang web xem bóng đá trực tuyến này là gì? Để hiểu rõ về chủ...",
+    image: "image-4-600x400.jpg"
+  },
+  {
+    id: 12,
+    h2: "Cách tìm link vào thevang tv xem bóng đá trực tiếp hiệu quả nhất",
+    span: "Hoàng Khánh Ngân Lần cập nhật cuối: 22 Tháng Tư, 2024",
+    p: "Cách tìm link vào thevang tv xem bóng đá trực tiếp hiệu quả nhất gồm những bước thao tác nào? Những ưu và nhược điểm của trang web xem trực tiếp bóng đá này gồm những nội dung gì? Để hiểu rõ về chủ đề này hơn thì các...",
+    image: "image-52-600x400.jpg"
+  },
+  
+  ];
+  $.each(items_main, function(index, item) {
+    var item_main = `
+        <div class="border rounded-lg p-5 lg:p-10 *:pb-5 mb-5 lg:mb-10">
+            <h2 onclick="detail(${item.id})">${item.h2}</h2>
+            <div class="flex items-center gap-5">
+                <div class="flex items-center w-[3rem] h-[3rem] bg-center">
+                    <img class="w-full h-full rounded-[100%] object-cover" src="./assets/images/hoang-khanh-ngan-600x400.jpg" alt="">
+                </div>   
+                <span class="text-[1.4rem]">${item.span}</span>  
+            </div>
+            <div class="grid grid-cols-12 gap-5 items-center">
+                <div class="col-span-12 lg:col-span-3 ">
+                    <img class="cursor-pointer" onclick="detail(${item.id})" src="./assets/images/${item.image}" alt="">
+                </div>
+                <div class="*:pb-5 col-span-12 lg:col-span-9">
+                    <p onclick="detail(${item.id})">${item.p}</p>
+                    <button onclick="detail(${item.id})" type="button" class="text-white bg-black focus:ring-4 focus:outline-none focus:ring-white dark:focus:ring-pink-800 shadow-lg shadow-black dark:shadow-lg dark:shadow-pink-800/80 font-medium rounded-lg text-2xl px-10 py-4 text-center me-2 mb-2">Xem thêm</button>
+                </div>
+            </div>
+        </div>
+    `;
+
+    $('#items_main').append(item_main);
+  });
+</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  <script src="./assets/javascript.js"></script>
+  <script src="./assets/index.ts"></script>
+</body>

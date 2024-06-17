@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Sản phẩm Happyluck cực dễ dàng chỉ qua 3 bước đơn giản</title>
+    <link rel="icon" href="./assets/images/cropped-logo-happyluke-60x60.png" sizes="192x192" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/jquery-3.7.1.min.js"></script>
+    <script src="assets/tailwind.js"></script>
+    <link rel="stylesheet" href="./assets/index.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <main>
+        <div class="shadow-lg">
+            <div class="container mx-auto py-3">
+                <p>Home - Sản phẩm</p>
+            </div>
+        </div>
+        <div class="container mx-auto">
+
+
+            <div class="content-1 content-1-khuyen grid grid-cols-12 gap-5 lg:gap-10 my-5 lg:my-10 ">
+                <div class="col-span-12 md:col-span-9 border rounded-2xl *:pb-7 p-5 lg:p-10 *:mb-5 *:lg:mb-10">
+                    <div class="border rounded-lg p-5 lg:p-10">
+                        <h1>Sản phẩm</h1>
+                        <p>Các sản phẩm tại HappyLuck sẽ được Hayppyluck.fun cập nhật liên tục mỗi ngày, tham gia trải
+                            nghiệm nhận hàng ngàn khuyến mãi khủng tại Hayppyluck.fun</p>
+                    </div>
+                    <div id="showloading" class=" h-screen w-full left-0 bg-[#adadadbe] top-0 fixed duration-1000">
+                        <div class=' space-x-2 justify-center flex items-center mt-[20%]'>
+                            <div class='h-8 w-8 bg-black rounded-full animate-bounce [animation-delay:0s]'></div>
+                            <div class='h-8 w-8 bg-black rounded-full animate-bounce [animation-delay:-0.3s]'></div>
+                            <div class='h-8 w-8 bg-black rounded-full animate-bounce'></div>
+                        </div>
+                    </div>
+                    <div class="border rounded-lg p-5 lg:p-10 *:pb-5">
+                        <h2 onclick="detail(5)">Bầu Cua Online: Cách Chơi & Mẹo Chơi Chắc Thắng “Đỉnh Nhất”</h2>
+                        <div class="flex items-center gap-5">
+                            <div class="flex items-center w-[3rem] h-[3rem] bg-center">
+                                <img class="w-full h-full rounded-[100%] object-cover"
+                                    src="./assets/images/hoang-khanh-ngan-600x400.jpg" alt="">
+                            </div>
+                            <span class="text-[1.4rem]">Hoàng Khánh Ngân | Lần cập nhật cuối: 22 Tháng Tư, 2024</span>
+                        </div>
+                        <div class="grid grid-cols-12 gap-5 items-center">
+                            <div class="col-span-12 lg:col-span-3">
+                                <img onclick="detail(5)" src="./assets/images/bau-cua-online-600x400.jpg" alt="">
+                            </div>
+                            <div class="*:pb-5 col-span-12 lg:col-span-9">
+                                <p onclick="detail(5)">Bầu cua online có cách chơi như thế nào? Kinh nghiệm chơi bầu cua
+                                    luôn dành chiến thắng ra sao? Bầu cua được xem là một trong các tựa game dân gian
+                                    lâu đời ở Việt Nam. Chúng được các cược thủ săn đón vô cùng nhiệt tình bởi...</p>
+                                <button type="button" onclick="detail(5)"
+                                class="text-white bg-black focus:ring-4 focus:outline-none focus:ring-white dark:focus:ring-pink-800 shadow-lg shadow-black dark:shadow-lg dark:shadow-pink-800/80 font-medium rounded-lg text-2xl px-10 py-4 text-center me-2 mb-2"">Xem
+                                    thêm</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border rounded-lg p-5 lg:p-10 *:pb-5">
+                        <h2 onclick="detail(6)">Cách chơi game Baccarat tại Happyluck, Tỷ lệ chiến thắng 99%</h2>
+                        <div class="flex items-center gap-5">
+                            <div class="flex items-center w-[3rem] h-[3rem] bg-center">
+                                <img class="w-full h-full rounded-[100%] object-cover"
+                                    src="./assets/images/hoang-khanh-ngan-600x400.jpg" alt="">
+                            </div>
+                            <span class="text-[1.4rem]">Hoàng Khánh Ngân | Lần cập nhật cuối: 22 Tháng Tư, 2024</span>
+                        </div>
+                        <div class="grid grid-cols-12 gap-5 items-center">
+                            <div class="col-span-12 lg:col-span-3">
+                                <img onclick="detail(6)" src="./assets/images/choi-game-baccarat-600x400.jpg" alt="">
+                            </div>
+                            <div class="*:pb-5 col-span-12 lg:col-span-9">
+                                <p onclick="detail(6)">Game bài Baccarat là một trò chơi khá phổ biến được rất nhiều
+                                    người chơi tham gia tại các khung giờ cao điểm của nhà cái HappyLuck. Vậy cách chơi
+                                    game Baccarat có gì hấp dẫn? Và có mẹo này giúp tăng tỷ lệ chiến thắng lên đến
+                                    99%...</p>
+                                <button type="button" onclick="detail(6)"
+                                class="text-white bg-black focus:ring-4 focus:outline-none focus:ring-white dark:focus:ring-pink-800 shadow-lg shadow-black dark:shadow-lg dark:shadow-pink-800/80 font-medium rounded-lg text-2xl px-10 py-4 text-center me-2 mb-2">Xem
+                                    thêm</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border rounded-lg p-5 lg:p-10 *:pb-5">
+                        <h2 onclick="detail(7)">Cách Chơi Blackjack Tại Happyluck Với 3 Bước Đơn Giản</h2>
+                        <div class="flex items-center gap-5">
+                            <div class="flex items-center w-[3rem] h-[3rem] bg-center">
+                                <img class="w-full h-full rounded-[100%] object-cover"
+                                    src="./assets/images/hoang-khanh-ngan-600x400.jpg" alt="">
+                            </div>
+                            <span class="text-[1.4rem]">Hoàng Khánh Ngân | Lần cập nhật cuối: 22 Tháng Tư, 2024</span>
+                        </div>
+                        <div class="grid grid-cols-12 gap-5 items-center">
+                            <div class="col-span-12 lg:col-span-3">
+                                <img onclick="detail(7)" src="./assets/images/cach-choi-blackjack-5-600x400.jpg" alt="">
+                            </div>
+                            <div class="*:pb-5 col-span-12 lg:col-span-9">
+                                <p onclick="detail(7)">Blackjack là trò chơi quen thuộc tại các casino online. Trò chơi
+                                    mang lại cơ hội thắng cược lớn cho anh em cược thủ. Vì vậy luôn ghi nhận số lượng
+                                    người chơi khủng. Ở bài viết này, Luke79 sẽ tiết lộ ngay cách chơi Blackjack tại nhà
+                                    cái....</p>
+                                <button type="button" onclick="detail(7)"
+                                class="text-white bg-black focus:ring-4 focus:outline-none focus:ring-white dark:focus:ring-pink-800 shadow-lg shadow-black dark:shadow-lg dark:shadow-pink-800/80 font-medium rounded-lg text-2xl px-10 py-4 text-center me-2 mb-2">Xem
+                                    thêm</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border rounded-lg p-5 lg:p-10 *:pb-5">
+                        <h2 onclick="detail(8)">Cách chơi roulette hiệu quả “chuẩn xác” tại Happyluck</h2>
+                        <div class="flex items-center gap-5">
+                            <div class="flex items-center w-[3rem] h-[3rem] bg-center">
+                                <img class="w-full h-full rounded-[100%] object-cover"
+                                    src="./assets/images/hoang-khanh-ngan-600x400.jpg" alt="">
+                            </div>
+                            <span class="text-[1.4rem]">Hoàng Khánh Ngân Lần cập nhật cuối: 22 Tháng Tư, 2024</span>
+                        </div>
+                        <div class="grid grid-cols-12 gap-5 items-center">
+                            <div class="col-span-12 lg:col-span-3">
+                                <img class="cursor-pointer" onclick="detail(8)"
+                                    src="./assets/images/cach-choi-roulette-4-600x400.jpg" alt="">
+                            </div>
+                            <div class="*:pb-5 col-span-12 lg:col-span-9">
+                                <p onclick="detail(8)">Happyluck casino online là địa chỉ cá cược đang nhận được rất
+                                    nhiều sự quan tâm từ người chơi Việt. Người chơi được trải nghiệm nhiều lĩnh vực cá
+                                    cược mới mẻ, nâng cao tỷ lệ thắng cược của bản thân. Đặc biệt phải kể tới trò chơi
+                                    Roulette...</p>
+                                <button type="button" onclick="detail(8)"
+                                class="text-white bg-black focus:ring-4 focus:outline-none focus:ring-white dark:focus:ring-pink-800 shadow-lg shadow-black dark:shadow-lg dark:shadow-pink-800/80 font-medium rounded-lg text-2xl px-10 py-4 text-center me-2 mb-2">Xem
+                                    thêm</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-span-12 md:col-span-3" id="news_right">
+
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+
+    <div id="footer"></div>
+    <div id="backtotop"></div>
+    <script>
+        var active = 'Sản phẩm';
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <script src="./assets/javascript.js"></script>
+    <script src="./assets/index.ts"></script>
+</body>

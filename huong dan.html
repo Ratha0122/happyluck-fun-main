@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Hướng dẫn Happyluck cực dễ dàng chỉ qua 3 bước đơn giản</title>
+    <link
+      rel="icon"
+      href="./assets/images/cropped-logo-happyluke-60x60.png"
+      sizes="192x192"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/jquery-3.7.1.min.js"></script>
+    <script src="assets/tailwind.js"></script>
+    <link rel="stylesheet" href="./assets/index.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+</head>
+<body>
+<div id="header"></div>
+<main>
+    <div class="shadow-lg">
+        <div class="container mx-auto py-3">
+        <p>Home - Hướng dẫn</p></div>
+    </div>
+    <div class="container mx-auto">
+    <div class="content-1 content-1-khuyen grid grid-cols-12 gap-5 lg:gap-10 my-5 lg:my-10 ">
+        <div class="col-span-12 md:col-span-9 border rounded-2xl  p-5 lg:p-10 *:mb-5 *:lg:mb-10">
+            <div class="border rounded-lg p-5 lg:p-10">
+                <h1 >Hướng dẫn</h1>
+                <p>Hayppyluck.fun hướng dẫn anh em tham gia cá cược hiệu quả, cập nhật thủ thuật chơi mới nhất giúp thắng tiền tại nhà cái HappyLuck</p>
+            </div>
+            <div id="showloading" class=" h-screen w-full left-0 bg-[#adadadbe] top-0 fixed duration-1000">
+                <div class=' space-x-2 justify-center flex items-center mt-[20%]'>
+                    <div class='h-8 w-8 bg-black rounded-full animate-bounce [animation-delay:0s]'></div>
+                   <div class='h-8 w-8 bg-black rounded-full animate-bounce [animation-delay:-0.3s]'></div>
+                   <div class='h-8 w-8 bg-black rounded-full animate-bounce'></div>
+                  </div>
+            </div>
+            <div id="items_main"></div>
+        </div>
+        <div class="col-span-12 md:col-span-3" id="news_right">
+        </div>
+    </div>
+    </div>
+</main>
+<div id="footer"></div>
+<div id="backtotop"></div>
+<script>
+  var active = "Hướng dẫn";
+      var items_main = [
+  {
+    id: 19,
+    h2: "AFK là gì? Vì sao các game thủ thường xuyên sử dụng cụm từ AFK? ",
+    span: "Hoàng Khánh Ngân Lần cập nhật cuối: 22 Tháng Tư, 2024",
+    p: "AFK là gì? Tại sao các game thủ thường xuyên sử dụng cụm từ AFK trong các trận game? Nguồn gốc ra đời của cụm từ AFK là từ đâu mà ra? Các game thủ Liên Minh Huyền Thoại thường AFK trong những trường hợp nào? Hiện nay có...",
+    image: "tim-hieu-afk-la-gi-600x400.jpg"
+  },
+  {
+    id: 20,
+    h2: "Tìm hiểu về thuật toán sicbo và cách áp dụng",
+    span: "Hoàng Khánh Ngân Lần cập nhật cuối: 22 Tháng Tư, 2024",
+    p: "Khi chơi cá cược sicbo nhiều người chơi có kinh nghiệm lâu năm thường áp dụng các thuật toán sicbo để giúp bản thân có cơ hội chiến thắng cao hơn. Vậy thuật toán sicbo là gì và cách áp dụng như thế nào? Bạn hãy cùng đăng nhập...",
+    image: "thuat-toan-sicbo-la-gi-600x400.jpg"
+  },
+  {
+    id: 21,
+    h2: "Cách chơi lô tô online? Bật mí những mẹo chơi loto hay ",
+    span: "Hoàng Khánh Ngân Lần cập nhật cuối: 22 Tháng Tư, 2024",
+    p: "Cách chơi lô tô trực tuyến khá giống với dạng truyền thống. Do đó, nếu anh em đã từng trải nghiệm mảng giải trí này ngoài đời thực sẽ dễ dàng bắt nhịp hơn. Với sự phát triển của công nghệ, cược thủ dễ dàng chơi loto tại sân...",
+    image: "Cach-choi-lo-to-don-gian-600x400.jpg"
+  },
+  {
+    id: 22,
+    h2: "Cách chơi Bonanza Wheel tại nhà cái Happyluck ra sao?",
+    span: "Hoàng Khánh Ngân Lần cập nhật cuối: 22 Tháng Tư, 2024",
+    p: "Cách chơi Bonanza Wheel trực tuyến không quá khó hiểu. Trò chơi này rất cuốn hút, thưởng hấp dẫn nên được nhiều tay chơi chọn lựa giải trí. Anh em chỉ việc đặt cược rồi đợi bánh xe quay thưởng và nhận về số tiền tương ứng. Theo dõi...",
+    image: "Cach-choi-bonanza-wheel-6-600x400.jpg"
+  },
+  {
+    id: 23,
+    h2: "Bật mí cách chơi Table Game dễ thắng tại Hayppyluck.fun ",
+    span: "Hoàng Khánh Ngân Lần cập nhật cuối: 22 Tháng Tư, 2024",
+    p: "Nhu cầu tìm hiểu về cách chơi Table Game hiệu quả của cược thủ hiện nay ngày càng tăng cao. Bởi đây là hình thức giải trí hấp dẫn và giúp người chơi có khả năng thu được nhiều lợi nhuận nhanh chóng. Cùng tham khảo những thông tin...",
+    image: "cach-choi-table-game-6-600x400.jpeg"
+  },
+
+  ];
+  $.each(items_main, function(index, item) {
+    var item_main = `
+        <div class="border rounded-lg p-5 lg:p-10 *:pb-5 mb-5 lg:mb-10">
+            <h2 onclick="detail(${item.id})">${item.h2}</h2>
+            <div class="flex items-center gap-5">
+                <div class="flex items-center w-[3rem] h-[3rem] bg-center">
+                    <img class="w-full h-full rounded-[100%] object-cover" src="./assets/images/hoang-khanh-ngan-600x400.jpg" alt="">
+                </div>   
+                <span class="text-[1.4rem]">${item.span}</span>  
+            </div>
+            <div class="grid grid-cols-12 gap-5 items-center">
+                <div class="col-span-12 lg:col-span-3 ">
+                    <img class="cursor-pointer"  onclick="detail(${item.id})" src="./assets/images/${item.image}" alt="">
+                </div>
+                <div class="*:pb-5 col-span-12 lg:col-span-9">
+                    <p class="cursor-pointer" onclick="detail(${item.id})">${item.p}</p>
+                    <button type="button" onclick="detail(${item.id})" type="button" class="text-white bg-black focus:ring-4 focus:outline-none focus:ring-white dark:focus:ring-pink-800 shadow-lg shadow-black dark:shadow-lg dark:shadow-pink-800/80 font-medium rounded-lg text-2xl px-10 py-4 text-center me-2 mb-2">Xem thêm</button>
+                </div>
+            </div>
+        </div>
+    `;
+
+    $('#items_main').append(item_main);
+  });
+</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  <script src="./assets/javascript.js"></script>
+  <script src="./assets/index.ts"></script>
+
+</body>
