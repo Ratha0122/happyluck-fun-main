@@ -35,7 +35,7 @@ $(document).ready(function () {
             <a href="index.html">
               <img
                 class="max-w-[7rem]"
-                src="./assets/images/cropped-logo-happyluke.png"
+                src="./assets/images/Artboard 122.png"
                 alt="Logo"
               />
             </a>
@@ -249,7 +249,7 @@ $(document).ready(function () {
                     <div class="flex gap-5">
                         <div class="flex justify-center max-w-[10rem]  bg-center">
                             <a>
-                            <img class="cursor-pointer"  onclick="detail(19)" class="object-cover w-full h-fit mt-2" src="./assets/images/tim-hieu-afk-la-gi-600x400.jpg" alt=""></a>
+                            <img class="cursor-pointer"  onclick="detail(19)" class="object-cover w-full h-fit mt-2" src="./assets/images/Artboard 116.png" alt=""></a>
                         </div>
                         <div>
                             <p class="cursor-pointer" onclick="detail(19)" class="text-blue-700 hover:text-gray-800 duration-300"><a >AFK là gì? Vì sao các game thủ thường xuyên sử dụng cụm từ AFK? </a></p>
@@ -262,7 +262,7 @@ $(document).ready(function () {
                     <div class="flex gap-5">
                         <div class="flex justify-center max-w-[10rem]  bg-center">
                             <a >
-                            <img class="cursor-pointer" onclick="detail(20)" class="object-cover w-full h-fit mt-2" src="./assets/images/thuat-toan-sicbo-la-gi-600x400.jpg" alt=""></a>
+                            <img class="cursor-pointer" onclick="detail(20)" class="object-cover w-full h-fit mt-2" src="./assets/images/Artboard 114.png" alt=""></a>
                         </div>
                         <div>
                             <p class="cursor-pointer" onclick="detail(20)" class="text-blue-700 hover:text-gray-800 duration-300"><a >Tìm hiểu về thuật toán sicbo và cách áp dụng</a></p>
@@ -275,7 +275,7 @@ $(document).ready(function () {
                     <div class="flex gap-5">
                         <div class="flex justify-center max-w-[10rem]  bg-center">
                             <a >
-                            <img class="cursor-pointer" onclick="detail(21)" class="object-cover w-full h-fit mt-2" src="./assets/images/Cach-choi-lo-to-don-gian-600x400.jpg" alt=""></a>
+                            <img class="cursor-pointer" onclick="detail(21)" class="object-cover w-full h-fit mt-2" src="./assets/images/Artboard 21.png" alt=""></a>
                         </div>
                         <div>
                             <p class="cursor-pointer" onclick="detail(21)" class="text-blue-700 hover:text-gray-800 duration-300"><a >Cách chơi lô tô online? Bật mí những mẹo chơi loto hay </a></p>
@@ -288,7 +288,7 @@ $(document).ready(function () {
                     <div class="flex gap-5">
                         <div class="flex justify-center max-w-[10rem]  bg-center">
                             <a >
-                            <img class="cursor-pointer" onclick="detail(24)" class="object-cover w-full h-fit mt-2" src="./assets/images/cach-choi-tai-xiu-2-600x400.jpg" alt=""></a>
+                            <img class="cursor-pointer" onclick="detail(24)" class="object-cover w-full h-fit mt-2" src="./assets/images/Artboard 30.png" alt=""></a>
                         </div>
                         <div>
                             <p class="cursor-pointer" onclick="detail(24)" class="text-blue-700 hover:text-gray-800 duration-300"><a >Tài xỉu là trò chơi gì? Cách chơi tài xỉu tại Luke79.top</a></p>
@@ -301,7 +301,7 @@ $(document).ready(function () {
                     <div class="flex gap-5">
                         <div class="flex justify-center max-w-[10rem]  bg-center">
                             <a >
-                            <img class="cursor-pointer" onclick="detail(25)" class="object-cover w-full h-fit mt-2" src="./assets/images/cach-choi-lien-minh-huyen-thoai-len-do-600x400.jpg" alt=""></a>
+                            <img class="cursor-pointer" onclick="detail(25)" class="object-cover w-full h-fit mt-2" src="./assets/images/Artboard 20.png" alt=""></a>
                         </div>
                         <div>
                             <p class="cursor-pointer" onclick="detail(25)" class="text-blue-700 hover:text-gray-800 duration-300"><a >Cách chơi Liên Minh Huyền Thoại hiệu quả tại Luke79.top </a></p>
