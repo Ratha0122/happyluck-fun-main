@@ -78,13 +78,13 @@ $(document).ready(function () {
               <a href="index.html" class="tittle_navbar">Trang Chủ</a>
             </li>
             <li class="p-5 relative">
-              <a href="dang ky happyluck.html" class="tittle_navbar"
-                >Đăng ký HappyLuck</a
+              <a href="dang ky HappyLuck.html" class="tittle_navbar"
+                >Đăng ký HapplyLuke</a
               >
             </li>
             <li class="p-5 group relative">
               <a href="khuyen mai happpyluck.html" class="flex items-center">
-                <div class="mr-1 tittle_navbar">Khuyến Mãi HappyLuck</div>
+                <div class="mr-1 tittle_navbar">Khuyến Mãi HapplyLuke</div>
               </a>
             </li>
             <li class="p-5 group relative">
@@ -118,12 +118,12 @@ $(document).ready(function () {
           </a>
         </li>
         <li class="">
-          <a  href="dang ky happyluck.html" class="flex items-center px-5 py-5 font-semibold text-2xl text-gray-900 rounded-lg hover:bg-gray-200">
-            <span class="ml-3">ĐĂNG KÝ HAPPYLUCK</span>
+          <a  href="dang ky HappyLuck.html" class="flex items-center px-5 py-5 font-semibold text-2xl text-gray-900 rounded-lg hover:bg-gray-200">
+            <span class="ml-3">ĐĂNG KÝ HapplyLuke</span>
           </a>
         </li>
         <li>
-            <a  href="khuyen mai happpyluck.html" class="flex items-center px-5 py-5 font-semibold text-2xl text-gray-900 rounded-lg hover:bg-gray-200">KHUYẾN MÃI HAPPYLUCK</a>
+            <a  href="khuyen mai happpyluck.html" class="flex items-center px-5 py-5 font-semibold text-2xl text-gray-900 rounded-lg hover:bg-gray-200">KHUYẾN MÃI HapplyLuke</a>
         </li>
         <li>
             <a  href="./san pham.html"class="flex items-center px-5 py-5 font-semibold text-2xl text-gray-900 rounded-lg hover:bg-gray-200" >SẢN PHẨM</a> 
@@ -172,9 +172,9 @@ $(document).ready(function () {
             <div class="py-5 lg:py-10 *:pb-5">
               <h1 class="text-white text-4xl font-bold">GIỚI THIỆU</h1>
               <hr class="border-black border-t-[4px]">
-              <p class="text-white">Happyluck chuyên trang cá cược thể thao, lô đề, casino, game slot… uy tín. Hayppyluck.fun là đại lý chính thức của nhà cái Happyluck cung cấp đường link vào nhà cái không bị chặn, gửi tiền, rút tiền  nhanh chóng.</p>
+              <p class="text-white">HapplyLuke chuyên trang cá cược thể thao, lô đề, casino, game slot… uy tín. Hayppyluck.fun là đại lý chính thức của nhà cái HapplyLuke cung cấp đường link vào nhà cái không bị chặn, gửi tiền, rút tiền  nhanh chóng.</p>
               <ul class="list-disc *:text-white text-2xl pl-10">
-                <li><p class="text-white">Tên DN : HappyLuck</p></li>
+                <li><p class="text-white">Tên DN : HapplyLuke</p></li>
                 <li><p class="text-white">Địa chỉ: 23 P. Hoàng Đạo Thúy, Trung Hoà, Cầu Giấy, Hà Nội, Việt Nam</p></li>
                 <li><p class="text-white">Website : https://Hayppyluck.fun/</p></li>
               </ul>
@@ -210,7 +210,7 @@ $(document).ready(function () {
       </footer>
       <footer class="bg-slate-800">
         <div class="container mx-auto py-5 lg:py-7">
-          <p class="text-center text-white">Bản quyền thuộc Happyluck – Hayppyluck.fun</p>
+          <p class="text-center text-white">Bản quyền thuộc HapplyLuke – Hayppyluck.fun</p>
         </div>
       </footer>
     `;  
