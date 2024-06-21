@@ -78,7 +78,7 @@ $(document).ready(function () {
               <a href="index.html" class="tittle_navbar">Trang Chủ</a>
             </li>
             <li class="p-5 relative">
-              <a href="dang ky HappyLuck.html" class="tittle_navbar"
+              <a href="dang ky happyluck.html" class="tittle_navbar"
                 >Đăng ký HapplyLuke</a
               >
             </li>
@@ -118,7 +118,7 @@ $(document).ready(function () {
           </a>
         </li>
         <li class="">
-          <a  href="dang ky HappyLuck.html" class="flex items-center px-5 py-5 font-semibold text-2xl text-gray-900 rounded-lg hover:bg-gray-200">
+          <a  href="dang ky happyluck.html" class="flex items-center px-5 py-5 font-semibold text-2xl text-gray-900 rounded-lg hover:bg-gray-200">
             <span class="ml-3">ĐĂNG KÝ HapplyLuke</span>
           </a>
         </li>
